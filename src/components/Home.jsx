@@ -1,7 +1,7 @@
 import React from 'react';
 export default function Home() {
   return (
-    <div className="h-full w-full bg-gradient-to-b from-black to-gray-900 text-white ">
+    <div className="h-full w-full bg-gradient-to-b from-black to-gray-900 text-white">
       <div className="flex flex-col items-center justify-center h-full px-4 lg:px-0">
         <div className="w-full mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tighter mb-4 mt-80">
