@@ -1,7 +1,7 @@
 import React from 'react';
 export default function Home() {
   return (
-    <div className="h-full w-full bg-gradient-to-b from-black to-gray-900 text-white">
+    <div className=" h-full w-full bg-gradient-to-b from-black to-gray-900 text-white">
       <div className="flex flex-col items-center justify-center h-full px-4 lg:px-0">
         <div className="w-full mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tighter mb-4 mt-80">
@@ -19,6 +19,7 @@ export default function Home() {
 The Department boasts of an excellent faculty pool with rich and diverse backgrounds of mechanical engineering, electrical engineering and power engineering. Several laboratories equipped with modern equipment, a huge workshop and impressive computational facility for the students, faculty members and research scholars are the key to the active teaching and research environment of this small, but vibrant department.
           </p>
         </div>
+        {<div className="flex px-10 py-28 h-full "></div>}
       </div>
     </div>
   );

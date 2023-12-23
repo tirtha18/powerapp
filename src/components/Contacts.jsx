@@ -83,8 +83,8 @@ const Contacts = () => {
   ];
 
   return (
-    <div className="h-full w-full bg-gradient-to-b from-black to-gray-900 text-white">
-      <div className="flex px-10 py-28 h-full "></div>
+    <div className="h-full w-screen bg-gradient-to-b from-black to-gray-900 text-white">
+      <div className="flex px-10 py-28 h-full"></div>
       <div className="container mx-auto py-12">
         <h1 className="text-3xl font-bold mb-6">Faculty Summary - Full Time</h1>
         <div className="mb-8">
