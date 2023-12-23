@@ -87,7 +87,6 @@ const Contacts = () => {
       <div className="flex px-10 py-28 h-full "></div>
       <div className="container mx-auto py-12">
         <h1 className="text-3xl font-bold mb-6">Faculty Summary - Full Time</h1>
-
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-4">Professors</h2>
           <table className="min-w-full bg-gray-800 border border-gray-700">
@@ -95,7 +94,7 @@ const Contacts = () => {
               <tr>
                 <th className="py-2 px-4 border-b">Name / Qualification</th>
                 <th className="py-2 px-4 border-b">Telephone No. / Email ID</th>
-                <th className="py-2 px-4 border-b">Specialization</th>
+                <th className="hidden md:table-cell py-2 px-4 border-b">Specialization</th>
               </tr>
             </thead>
             <tbody>
@@ -103,7 +102,7 @@ const Contacts = () => {
                 <tr key={id}>
                   <td className="py-2 px-4 border-b">{name}</td>
                   <td className="py-2 px-4 border-b">{tel}</td>
-                  <td className="py-2 px-4 border-b">{spec}</td>
+                  <td className="hidden md:table-cell py-2 px-4 border-b">{spec}</td>
                 </tr>
               ))}
             </tbody>
@@ -117,7 +116,7 @@ const Contacts = () => {
               <tr>
                 <th className="py-2 px-4 border-b">Name / Qualification</th>
                 <th className="py-2 px-4 border-b">Telephone No. / Email ID</th>
-                <th className="py-2 px-4 border-b">Specialization</th>
+                <th className="hidden md:table-cell py-2 px-4 border-b">Specialization</th>
               </tr>
             </thead>
             <tbody>
@@ -125,7 +124,7 @@ const Contacts = () => {
                 <tr key={id}>
                   <td className="py-2 px-4 border-b">{name}</td>
                   <td className="py-2 px-4 border-b">{tel}</td>
-                  <td className="py-2 px-4 border-b">{spec}</td>
+                  <td className="hidden md:table-cell py-2 px-4 border-b">{spec}</td>
                 </tr>
               ))}
             </tbody>
@@ -139,7 +138,7 @@ const Contacts = () => {
               <tr>
                 <th className="py-2 px-4 border-b">Name / Qualification</th>
                 <th className="py-2 px-4 border-b">Telephone No. / Email ID</th>
-                <th className="py-2 px-4 border-b">Specialization</th>
+                <th className="hidden md:table-cell py-2 px-4 border-b">Specialization</th>
               </tr>
             </thead>
             <tbody>
@@ -147,7 +146,7 @@ const Contacts = () => {
                 <tr key={id}>
                   <td className="py-2 px-4 border-b">{name}</td>
                   <td className="py-2 px-4 border-b">{tel}</td>
-                  <td className="py-2 px-4 border-b">{spec}</td>
+                  <td className="hidden md:table-cell py-2 px-4 border-b">{spec}</td>
                 </tr>
               ))}
             </tbody>
