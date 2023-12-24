@@ -41,8 +41,8 @@ export default function NavBar() {
 
     return (
         <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
-            <div className="w-20 py-4 mt-5 hover:scale-110 duration-300">
-                <img src={Powlogo} alt="a"></img>
+            <div className="w-20 py-4 hover:scale-110  duration-300">
+                <img className="mt-2" src={Powlogo} alt="a"></img>
             </div>
             <ul className="hidden md:flex">
                 {links.map(({ id, link, routes }) => (
@@ -59,9 +59,9 @@ export default function NavBar() {
                 {!nav ? <FaBars size={30}/> : <FaTimes size={30}/>}
             </div>
             {nav && (
-                <ul className="flex flex-col justify-between items-center w-full h-screen px-4 text-white bg-black z-10">
+                <ul className="flex flex-col justify-centre items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to bg-gray-950">
                     {links.map(({ id, link, routes }) => (
-                        <li key={id} className="px-4 cursor-pointer capitalize text-4xl py-6" onClick={() => setNav(!nav)}>
+                        <li key={id} className="px-4 cursor-pointer capitalize text-3xl py-6" onClick={() => setNav(!nav)}>
                             <Link to={routes}>
                             <span className="hover:bg-gradient-to-r from-indigo-600 to-pink-500 px-2 py-1.5 rounded-3xl duration-200">
                                 {link}

@@ -8,18 +8,18 @@ export default function Home() {
             Welcome to the Official Page of
           </h1>
           <h2 className="text-2xl font-bold mb-8">
-            The Department of Power Engineering,
+            The Department of <span className="bg-gradient-to-r from-indigo-600 to-pink-500 px-1.5 py-1 rounded-3xl duration-200">Power Engineering,</span>
             <br />
             Jadavpur University
           </h2>
         </div>
         <div className="mt-12 text-center">
           <p className="text-lg leading-relaxed px-2 text-gray-200">
-            The Department was established under the name of Power Plant Engineering in the year 1989 at the Salt Lake Campus of the University with a mission to produce specialized engineers in the field of power generation, transmission and distribution. Since the year 2003, it has been renamed as Power Engineering Department. Today, the Department offers both Bachelor of Power Engineering and Master of Power Engineering courses with student intakes of 43 and 18, respectively. The undergraduate course offers a diverse and interdisciplinary coverage of relevant mechanical and electrical engineering courses, and specialized courses on thermal, hydro, nuclear and renewable/non-conventional power generations. The course also contains a three-week credit-course on Power Plant Familiarization camp, where students get an intense practical training in operating power plants. The postgraduate course offers several elective courses on advanced topics on power generation, transmission and distribution, besides offering several interdisciplinary papers related to power engineering.
+            The Department was established under the name of Power Engineering in the year 1989 at the Salt Lake Campus of the University with a mission to produce specialized engineers in the field of power generation, transmission and distribution. Since the year 2003, it has been renamed as Power Engineering Department. Today, the Department offers both Bachelor of Power Engineering and Master of Power Engineering courses with student intakes of 43 and 18, respectively. The undergraduate course offers a diverse and interdisciplinary coverage of relevant mechanical and electrical engineering courses, and specialized courses on thermal, hydro, nuclear and renewable/non-conventional power generations. The course also contains a three-week credit-course on Power Plant Familiarization camp, where students get an intense practical training in operating power plants. The postgraduate course offers several elective courses on advanced topics on power generation, transmission and distribution, besides offering several interdisciplinary papers related to power engineering.
 The Department boasts of an excellent faculty pool with rich and diverse backgrounds of mechanical engineering, electrical engineering and power engineering. Several laboratories equipped with modern equipment, a huge workshop and impressive computational facility for the students, faculty members and research scholars are the key to the active teaching and research environment of this small, but vibrant department.
           </p>
         </div>
-        {<div className="flex px-10 py-28 h-full "></div>}
+        {<div className="flex px-10 py-24 h-full "></div>}
       </div>
     </div>
   );
