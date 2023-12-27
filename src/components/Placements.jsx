@@ -7,7 +7,7 @@ export default function Placements() {
     labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
     datasets: [
       {
-        label: 'Average CTC(inLPA)',
+        label: 'Average CTC(in LPA)',
         data: [9, 16, 12, 9, 13, 14, 14, 15],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
@@ -35,7 +35,7 @@ export default function Placements() {
     labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
     datasets: [
       {
-        label: 'Average CTC in LPA',
+        label: 'Median CTC(in LPA)',
         data: [9, 15, 12, 8, 12, 10, 12, 11],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
@@ -86,28 +86,28 @@ export default function Placements() {
         </div>
         <div className="bg-white px-8 py-20 w-11/12 rounded-3xl">
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
-            <button className="bg-red-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-red-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2016</div>
             </button>
-            <button className="bg-yellow-400 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-yellow-400 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2017</div>
             </button>
-            <button className="bg-green-500 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-green-500 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2018</div>
             </button>
-            <button className="bg-purple-500 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-purple-500 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2019</div>
             </button>
-            <button className="bg-blue-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-blue-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2020</div>
             </button>
-            <button className="bg-orange-400 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-orange-400 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2021</div>
             </button>
-            <button className="bg-indigo-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-indigo-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2022</div>
             </button>
-            <button className="bg-pink-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-4xl">
+            <button className="bg-pink-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2023</div>
             </button>
           </div>

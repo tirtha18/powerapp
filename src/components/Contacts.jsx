@@ -49,13 +49,13 @@ const Contacts = () => {
   const assoprof = [
     {
       id: 1,
-      name: 'BHIMSEN TUDU / Ph.D.',
+      name: 'Bhimsen Tudu / Ph.D.',
       tel: '8240977076 / bhimsen.tudu@jadavpuruniversity.in | bhimsen_ju@yahoo.co.in',
       spec: 'Optimization, Economics of Hybrid non-conventional energy system'
     },
     {
       id: 2,
-      name: 'GARGI KONAR (NAG) / M.E.E.',
+      name: 'Gargi Konar (Nag) / M.E.E.',
       tel: '919830250659 / gargi.konar@jadavpuruniversity.in',
       spec: 'Electrical Machines, Microprocessor Based Protection of Power Apparatus'
     }
@@ -64,7 +64,7 @@ const Contacts = () => {
   const assisprof = [
     {
       id: 1,
-      name: 'DEBASHIS PALIT / M.E.',
+      name: 'Debashis Palit / M.E.',
       tel: '9432514996 / palit2007@gmail.com | debashis.palit@jadavpuruniversity.in',
       spec: 'Electrical Machine, Measurement & Power System.'
     },
