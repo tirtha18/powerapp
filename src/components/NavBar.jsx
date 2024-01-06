@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     const [nav, setNav] = useState(false);
-    const [home, sethome] = useState(false);
+    const [home, sethome] = useState(true);
+    const [dashboard, setdashboard] = useState(false);
     const [syllabus, setsyllabus] = useState(false);
     const [notes, setnotes] = useState(false);
     const [placements, setplacements] = useState(false);
@@ -20,32 +21,40 @@ export default function NavBar() {
         },
         {
             id: 2,
+            link: 'dashboard',
+            routes: '/dashboard'
+        },
+        {
+            id: 3,
             link: 'syllabus',
             routes: '/syllabus'
         },
         {
-            id: 3,
+            id: 4,
             link: 'notes',
             routes: '/notes'
         },
         {
-            id: 4,
+            id: 5,
             link: 'placements',
             routes: '/placements'
         },
         {
-            id: 5,
+            id: 6,
             link: 'contacts',
             routes: '/contacts'
         },
         {
-            id: 6,
+            id: 7,
             link: 'feedback',
             routes: '/feedback'
         },
     ];
     const homeclick = () => {
         sethome(!home);
+    }
+    const dashboardclick = () => {
+        setdashboard(!dashboard);
     }
     const syllabusclick = () => {
         setsyllabus(!syllabus);
@@ -64,14 +73,15 @@ export default function NavBar() {
     }
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
+        <div className="flex justify-between items-center w-full h-24 px-4 text-white bg-black fixed z-10">
             <div className="w-20 py-4 hover:scale-110  duration-300">
-                <img className="mt-2" src={Powlogo} alt="a"></img>
+                <img className="mt-1" src={Powlogo} alt="a"></img>
             </div>
             <ul className="hidden md:flex">
                 <li key={1} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         !home && homeclick();
+                        dashboard && dashboardclick();
                         syllabus && syllabusclick();
                         notes && notesclick();
                         placements && placementsclick();
@@ -87,6 +97,23 @@ export default function NavBar() {
                 <li key={2} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         home && homeclick();
+                        !dashboard && dashboardclick();
+                        syllabus && syllabusclick();
+                        notes && notesclick();
+                        placements && placementsclick();
+                        contacts && contactclick();
+                        feedback && feedbackclick();
+                    }}>
+                    <Link to='/dashboard'>
+                        <span className={`hover:bg-gradient-to-r from-indigo-600 to-pink-500 px-2 py-1.5 rounded-3xl duration-200 ${dashboard ? 'bg-gradient-to-r from-indigo-600 to-pink-500' : ''}`}>
+                            Dashboard
+                        </span>
+                    </Link>
+                </li>
+                <li key={3} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
+                    onClick={() => {
+                        home && homeclick();
+                        dashboard && dashboardclick();
                         !syllabus && syllabusclick();
                         notes && notesclick();
                         placements && placementsclick();
@@ -99,9 +126,10 @@ export default function NavBar() {
                         </span>
                     </Link>
                 </li>
-                <li key={3} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
+                <li key={4} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         home && homeclick();
+                        dashboard && dashboardclick();
                         syllabus && syllabusclick();
                         !notes && notesclick();
                         placements && placementsclick();
@@ -114,9 +142,10 @@ export default function NavBar() {
                         </span>
                     </Link>
                 </li>
-                <li key={4} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
+                <li key={5} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         home && homeclick();
+                        dashboard && dashboardclick();
                         syllabus && syllabusclick();
                         notes && notesclick();
                         !placements && placementsclick();
@@ -129,9 +158,10 @@ export default function NavBar() {
                         </span>
                     </Link>
                 </li>
-                <li key={5} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
+                <li key={6} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         home && homeclick();
+                        dashboard && dashboardclick();
                         syllabus && syllabusclick();
                         notes && notesclick();
                         placements && placementsclick();
@@ -144,9 +174,10 @@ export default function NavBar() {
                         </span>
                     </Link>
                 </li>
-                <li key={6} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
+                <li key={7} className="py-6 px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                     onClick={() => {
                         home && homeclick();
+                        dashboard && dashboardclick();
                         syllabus && syllabusclick();
                         notes && notesclick();
                         placements && placementsclick();

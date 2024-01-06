@@ -89,7 +89,7 @@ export default function Placements() {
             <button className="bg-red-500 rounded-3xl h-44 hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
               <div className="justify-center">2016</div>
             </button>
-            <button className="bg-yellow-400 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl">
+            <button className="bg-yellow-400 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl text">
               <div className="justify-center">2017</div>
             </button>
             <button className="bg-green-500 rounded-3xl h-44  hover:scale-105 duration-200 text-white items-center font-bold text-3xl">

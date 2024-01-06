@@ -6,6 +6,7 @@ import Notes from "./components/Notes";
 import Placements from "./components/Placements";
 import Contacts from "./components/Contacts";
 import Syllabus from "./components/Syllabus";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/placements" element={<Placements />} />

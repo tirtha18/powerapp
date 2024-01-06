@@ -8,7 +8,7 @@ export default function Home() {
             Welcome to the Official Page of
           </h1>
           <h2 className="text-2xl font-bold mb-8">
-            The Department of <span className="bg-gradient-to-r from-indigo-600 to-pink-500 px-1.5 py-1 rounded-3xl duration-200">Power Engineering,</span>
+            The Department of <span className="bg-gradient-to-r from-indigo-600 to-pink-500 px-1.5 py-1 rounded-3xl duration-200">Power Engineering,  </span>
             <br />
             Jadavpur University
           </h2>
